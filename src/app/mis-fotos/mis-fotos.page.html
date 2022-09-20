@@ -1,0 +1,20 @@
+<div>
+    <ion-card *ngFor="let item of this.misFotos; let i = index" data-index="i">
+        <img src="{{item.pathFoto}}"/>
+        <ion-card-header>
+            <ion-card-subtitle>{{item.email}} - {{item.hora}}</ion-card-subtitle>
+        </ion-card-header>
+    </ion-card>
+
+    <div class="spinner" *ngIf="load" style="width: 100%;">
+        <div class="loadingio-spinner-pulse-3kih5eehhaq">
+        <div class="ldio-w9ojkd03epb">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </div>
+    </div>
+</div> 
+
+

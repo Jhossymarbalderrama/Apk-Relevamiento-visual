@@ -1,0 +1,44 @@
+
+  .spinner{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(0%,-50%);
+    z-index: 41;
+  }
+  
+  @keyframes ldio-w9ojkd03epb-1 {
+    0% { top: 36px; height: 128px }
+    50% { top: 60px; height: 80px }
+    100% { top: 60px; height: 80px }
+  }
+  @keyframes ldio-w9ojkd03epb-2 {
+    0% { top: 41.99999999999999px; height: 116.00000000000001px }
+    50% { top: 60px; height: 80px }
+    100% { top: 60px; height: 80px }
+  }
+  @keyframes ldio-w9ojkd03epb-3 {
+    0% { top: 48px; height: 104px }
+    50% { top: 60px; height: 80px }
+    100% { top: 60px; height: 80px }
+  }
+  .ldio-w9ojkd03epb div { position: absolute; width: 30px }.ldio-w9ojkd03epb div:nth-child(1) {
+    left: 35px;
+    background: #428cff;
+    animation: ldio-w9ojkd03epb-1 1s cubic-bezier(0,0.5,0.5,1) infinite;
+    animation-delay: -0.2s
+  }
+  .ldio-w9ojkd03epb div:nth-child(2) {
+    left: 85px;
+    background: #428cff;
+    animation: ldio-w9ojkd03epb-2 1s cubic-bezier(0,0.5,0.5,1) infinite;
+    animation-delay: -0.1s
+  }
+  .ldio-w9ojkd03epb div:nth-child(3) {
+    left: 135px;
+    background: #428cff;
+    animation: ldio-w9ojkd03epb-3 1s cubic-bezier(0,0.5,0.5,1) infinite;
+    animation-delay: undefineds
+  }
+  
+  

@@ -1,0 +1,144 @@
+#divSuperpuesto{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    width: 100%;
+    background: linear-gradient(#29005d, #7a30dd);
+    background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+#divEdificio{ 
+    position: fixed;  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    z-index: 100;
+    width: 100%;
+    background-image: url("../assets/img/Edificio.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100% 60%;
+    background-position: center;
+}
+
+#divSplashh{    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    background: linear-gradient(#29005d, #7a30dd);
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#icono-splash{    
+    position: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    animation-name: icono-splash;
+    animation-duration: 4s;
+}
+
+ @keyframes icono-splash {
+    from {
+      transform: scale(1.5);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      transform: scale(0.8); 
+      animation-timing-function: ease-in;
+    }
+    40% {
+      transform: scale(1.5);
+      animation-timing-function: ease-out;
+    }
+    60% {
+      transform: scale(0.8);
+      animation-timing-function: ease-in;
+    } 
+    80% {
+      transform: scale(1.5);
+      animation-timing-function: ease-out;
+    }
+    to{
+        transform: scale(0.8);
+        animation-timing-function: ease-in;
+    }
+}
+
+.tracking-in-expand-fwd-top {
+    top: 0;
+    text-align: center;
+    font-size: 22px;
+    --font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+    font-weight: bold;
+    width: 100%;
+    color:black;
+    margin-top: 22px;
+
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.tracking-in-expand-fwd-bottom {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    font-size: 20px;
+    --font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important; 
+    font-weight: bold;
+    width: 100%;
+    color:black;
+    margin-bottom: 22px;
+
+
+	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  

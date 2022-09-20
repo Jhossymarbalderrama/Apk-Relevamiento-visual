@@ -1,0 +1,92 @@
+<ion-content [fullscreen]="true">
+  <div style="width: 100%;height: 100%;">
+
+    <div style="width: 100%;height: 80%;">
+      <div class="page_Titulo" align="center">
+        Iniciar Sesión
+      </div>
+      <div class="logoLogin" align="center">
+        <img class="IconLogin" src="../../assets/img/IconoConFondo.png" width="170px" height="170px">
+      </div>
+      <div class="page_Titulo_Nube" align="center">
+        Nube
+      </div>
+    
+      <ion-grid>
+        Acceso Rápido:
+          <ion-row>
+            <ion-col>        
+              <section class="example-section">
+                <mat-slide-toggle [(ngModel)]="checked_usuario"  (click)="autoLogin(1)"
+                    class="example-margin"
+                    [color]="color"
+                    [checked]="checked">
+                    Usuario
+                </mat-slide-toggle>
+              </section>
+            </ion-col>
+        
+            <ion-col>
+              <section class="example-section">
+                <mat-slide-toggle [(ngModel)]="checked_admin" (click)="autoLogin(2)"
+                    class="example-margin"
+                    [color]="color"
+                    [checked]="checked">
+                    Admin
+                </mat-slide-toggle>
+              </section>
+            </ion-col>
+        
+            <ion-col>
+              <section class="example-section">
+                <mat-slide-toggle [(ngModel)]="checked_invitado" (click)="autoLogin(3)"
+                    class="example-margin"
+                    [color]="color"
+                    [checked]="checked">                
+                    Invitado
+                </mat-slide-toggle>
+              </section>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <ion-item class="inputsR">
+          <ion-label>
+            Correo
+          </ion-label>
+          <ion-input id="email" placeholder="ejempló@gmail.com" #email="ngModel" type="email" [(ngModel)]="user.email" required></ion-input>
+        </ion-item>
+      
+        <span id="span_email"  *ngIf="email.touched && !email.valid && mostrarSpanEmail">
+          *Ingrese Correo.
+        </span>
+        <ion-item class="inputsR">
+          <ion-label>
+            Contraseña
+          </ion-label>
+          <ion-input id="password" placeholder="Contraseña" #password="ngModel" type="password" [(ngModel)]="user.password"  required></ion-input>
+        </ion-item>
+        
+        <span id="span_password" *ngIf="password.touched && !password.valid && mostrarSpanPassw">
+          *Ingrese Contraseña.
+        </span>
+
+        <div class="botones_sesion_registrar">
+          <ion-button  color="mybotoncolor" style="margin-top: 20px;height: 80px;font-size: 30px;" size="large" expand="block" (click)="onLogin()">Iniciar Sesión</ion-button>
+          <ion-button  color="mybotoncolor" style="margin-top: 20px;height: 50px;" expand="block" routerLink="/register">Registrarse</ion-button>
+        </div>
+      
+        <div class="spinner" *ngIf="!load" style="width: 100%;">
+          <div class="loadingio-spinner-pulse-3kih5eehhaq">
+            <div class="ldio-w9ojkd03epb">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+</ion-content>
+
+

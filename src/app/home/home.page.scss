@@ -1,27 +1,35 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
+@keyframes ldio-w9ojkd03epb-1 {
+  0% { top: 36px; height: 128px }
+  50% { top: 60px; height: 80px }
+  100% { top: 60px; height: 80px }
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+@keyframes ldio-w9ojkd03epb-2 {
+  0% { top: 41.99999999999999px; height: 116.00000000000001px }
+  50% { top: 60px; height: 80px }
+  100% { top: 60px; height: 80px }
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+@keyframes ldio-w9ojkd03epb-3 {
+  0% { top: 48px; height: 104px }
+  50% { top: 60px; height: 80px }
+  100% { top: 60px; height: 80px }
 }
-
-#container a {
-  text-decoration: none;
+.ldio-w9ojkd03epb div { position: absolute; width: 30px }.ldio-w9ojkd03epb div:nth-child(1) {
+  left: 35px;
+  background: #428cff;
+  animation: ldio-w9ojkd03epb-1 1s cubic-bezier(0,0.5,0.5,1) infinite;
+  animation-delay: -0.2s
+}
+.ldio-w9ojkd03epb div:nth-child(2) {
+  left: 85px;
+  background: #428cff;
+  animation: ldio-w9ojkd03epb-2 1s cubic-bezier(0,0.5,0.5,1) infinite;
+  animation-delay: -0.1s
+}
+.ldio-w9ojkd03epb div:nth-child(3) {
+  left: 135px;
+  background: #428cff;
+  animation: ldio-w9ojkd03epb-3 1s cubic-bezier(0,0.5,0.5,1) infinite;
+  animation-delay: undefineds
 }

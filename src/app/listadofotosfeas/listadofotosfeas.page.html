@@ -1,0 +1,23 @@
+<div>
+    <ion-card *ngFor="let item of this.cosasFeas; let i = index" data-index="i">
+        <img src="{{item.pathFoto}}"/>
+        <ion-card-header>
+            <ion-card-subtitle>{{item.email}} - {{item.hora}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-icon id="{{i}}" *ngIf="item.like.indexOf(this.auth.logeado.email) != -1" (click)="onLike(1,item,i)" name="thumbs-up-sharp" style="font-size: 26px;color: yellow;"></ion-icon>  
+            <ion-icon id="{{i}}" *ngIf="item.like.indexOf(this.auth.logeado.email) == -1" (click)="onLike(2,item,i)" name="thumbs-up-sharp" style="font-size: 26px;"></ion-icon>          
+        </ion-card-content>
+    </ion-card>
+
+    <div class="spinner" *ngIf="load" style="width: 100%;">
+        <div class="loadingio-spinner-pulse-3kih5eehhaq">
+        <div class="ldio-w9ojkd03epb">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </div>
+    </div>
+</div>  
+
